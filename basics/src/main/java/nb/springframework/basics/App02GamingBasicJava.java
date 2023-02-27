@@ -1,16 +1,16 @@
 package nb.springframework.basics;
 
-import nb.springframework.basics.game.GameRunner;
-import nb.springframework.basics.game.MarioGame;
-import nb.springframework.basics.game.PacmanGame;
-import nb.springframework.basics.game.SuperContraGame;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class AppGamingBasicJava {
+public class App02GamingBasicJava {
     public static void main(String[] args) {
-        //var game=new MarioGame();
-        //var game=new SuperContraGame();
-        var game=new PacmanGame();
-        var gameRunner=new GameRunner(game);
-        gameRunner.run();
+        //1: Launch a Spring Context
+        //2: Configuration Class
+       var context =new AnnotationConfigApplicationContext(HelloWorldConfiguration.class);
+        System.out.println(context.getBean("noName"));
+        System.out.println(context.getBean("age"));
+        System.out.println(context.getBean("person"));
+        System.out.println(context.getBean("address"));
+
     }
 }
