@@ -47,12 +47,21 @@ public class HelloWorldConfiguration {
                 address3
         );
     }
+    @Bean
+    public Person person4Qualifier(String name, int age,@Qualifier("person4")Address address3 ){ // we can create a new bean by using already created bean
+        return new Person(
+                name,
+                age,
+                address3
+        );
+    }
     @Bean(name = "address2")
     @Primary // will resolve conflict of multiple same instances of beans
     public Address address(){
         return new Address("Mohallah Hayatullah","Dera ismail khan");
     }
     @Bean(name = "address3")
+    @Qualifier("person4")
     public Address address3(){
         return new Address("MultiGardens B17","Islamabad");
     }
