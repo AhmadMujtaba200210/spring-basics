@@ -3,6 +3,7 @@ package nb.springframework.basics;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 // To eleminating verbosity in java programs,
 // java 16 sdk introduced the record.
@@ -47,6 +48,7 @@ public class HelloWorldConfiguration {
         );
     }
     @Bean(name = "address2")
+    @Primary // will resolve conflict of multiple same instances of beans
     public Address address(){
         return new Address("Mohallah Hayatullah","Dera ismail khan");
     }
