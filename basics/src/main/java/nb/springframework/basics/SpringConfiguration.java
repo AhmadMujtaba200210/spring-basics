@@ -17,7 +17,6 @@ public class SpringConfiguration {
     @Bean
     public GameRunner gameRunner(GamingConsole game){
         return new GameRunner(game);
-
     }
 //var game=new MarioGame();
     //var game=new SuperContraGame();
