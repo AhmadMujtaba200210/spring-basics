@@ -13,7 +13,5 @@ public class AppGamingBasicJava {
 //        var gameRunner=new GameRunner(game);
 //        gameRunner.run();
 
-        var practice=new Practice();
-        practice.print();
     }
 }
