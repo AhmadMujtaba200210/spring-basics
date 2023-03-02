@@ -14,6 +14,7 @@ public class App02GamingBasicJava {
         System.out.println(context.getBean("person3Parameter"));
         System.out.println(context.getBean("address2"));
         //System.out.println(context.getBean(Address.class));
+        Arrays.stream( context.getBeanDefinitionNames()).forEach(System.out::println);
 
     }
 }
