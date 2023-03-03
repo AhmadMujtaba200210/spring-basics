@@ -1,5 +1,8 @@
-package nb.springframework.basics.game;
+package nb.springframework.basics02.game;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner {
     private GamingConsole gameRunner;
     public GameRunner(GamingConsole gameRunner){
