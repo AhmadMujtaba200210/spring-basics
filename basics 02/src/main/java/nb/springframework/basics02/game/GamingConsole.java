@@ -1,4 +1,4 @@
-package nb.springframework.basics.game;
+package nb.springframework.basics02.game;
 
 public interface GamingConsole {
     void up();

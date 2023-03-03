@@ -1,4 +1,4 @@
-package nb.springframework.basics.game;
+package nb.springframework.basics02.game;
 
 public class MarioGame implements GamingConsole{
     public void up(){

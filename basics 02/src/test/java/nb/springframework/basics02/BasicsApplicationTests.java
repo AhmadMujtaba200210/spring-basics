@@ -1,4 +1,4 @@
-package nb.springframework.basics;
+package nb.springframework.basics02;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
