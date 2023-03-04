@@ -15,12 +15,17 @@ class YourBusinessClass {
     //@Autowired //Field Injection
     Dep2 dep2;
 
-    @Autowired // Setters Injection
+    @Autowired
+    public YourBusinessClass(Dep1 dep1,Dep2 dep2){ // Constructor Injection
+        this.dep1=dep1;
+        this.dep2=dep2;
+    }
+   // @Autowired // Setters Injection
     public void setDep1(Dep1 dep1) {
         this.dep1 = dep1;
     }
 
-    @Autowired // Setters Injection
+   // @Autowired // Setters Injection
     public void setDep2(Dep2 dep2) {
         this.dep2 = dep2;
     }
