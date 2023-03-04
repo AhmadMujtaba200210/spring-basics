@@ -1,7 +1,5 @@
-package nb.springframework.basics02;
+package nb.springframework.basics02.game;
 
-import nb.springframework.basics02.game.GameRunner;
-import nb.springframework.basics02.game.GamingConsole;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
