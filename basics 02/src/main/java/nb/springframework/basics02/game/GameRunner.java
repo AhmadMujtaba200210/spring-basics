@@ -1,11 +1,12 @@
 package nb.springframework.basics02.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class GameRunner {
     private GamingConsole gameRunner;
-    public GameRunner(GamingConsole gameRunner){
+    public GameRunner(@Qualifier("SuperContraGameQualifier") GamingConsole gameRunner){
         this.gameRunner=gameRunner;
     }
 
