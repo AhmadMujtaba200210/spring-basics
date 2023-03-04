@@ -3,14 +3,12 @@ package nb.springframework.basics02;
 import nb.springframework.basics02.game.GameRunner;
 import nb.springframework.basics02.game.GamingConsole;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan("nb.springframework.basics02.game")
 public class App03GamingBasicJava {
-
 
     public static void main(String[] args) {
         var context= new AnnotationConfigApplicationContext(App03GamingBasicJava.class);
