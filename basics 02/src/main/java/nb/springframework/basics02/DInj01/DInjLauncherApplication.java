@@ -10,10 +10,20 @@ import java.util.Arrays;
 
 @Component
 class YourBusinessClass {
-    @Autowired //Field Injection
+   // @Autowired //Field Injection
     Dep1 dep1;
-    @Autowired //Field Injection
+    //@Autowired //Field Injection
     Dep2 dep2;
+
+    @Autowired // Setters Injection
+    public void setDep1(Dep1 dep1) {
+        this.dep1 = dep1;
+    }
+
+    @Autowired // Setters Injection
+    public void setDep2(Dep2 dep2) {
+        this.dep2 = dep2;
+    }
 
     @Override
     public String toString() {
