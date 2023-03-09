@@ -14,6 +14,6 @@ public class Example01Main {
     public static void main(String[] args) {
         var context= new AnnotationConfigApplicationContext(Example01Main.class);
         Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
-        System.out.println(context.getBean(BusinessLogicExample.class).max());;
+        System.out.println(context.getBean(BusinessLogicExample.class).max());
     }
 }
