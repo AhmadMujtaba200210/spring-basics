@@ -32,5 +32,5 @@ public class BeanScopesLauncherApplication {
         System.out.println("context.getBean(PrototypeClass.class) = " + context.getBean(PrototypeClass.class));
     }
 
-           
+
 }
